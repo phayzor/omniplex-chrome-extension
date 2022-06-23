@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+</head>
+<body id="body-el" class="w-72 min-w-full h-52 flex flex-col items-center">
+    <form id="form-el"class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                Username
+              </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="name" id="name-el" placeholder="Name" autocomplete="off" required>
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                Password
+              </label>
+            <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" name="password" id="password-el" placeholder="Password" required>
+            <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" id="button" value="Login">
+        </div>     
+    </form>
+    <div id="logged-container" class="flex flex-col items-center my-9">
+        <p id="intro-el"></p>
+        <button id="logout-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logout</button>
+    </div>
+    <x-modal title="Hey!" class="flex flex-col items-center">
+        <p id="modal-text"></p>
+    </x-modal>
+</body>
+<script src="../build/popup.js" type="module"></script>
+</html>

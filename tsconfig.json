@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "module": "es6",
+      "target": "ES6",
+      "moduleResolution": "node",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": true,
+      "outDir": "build",
+      "allowJs": false,
+      "strict": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["ES2015",
+                "DOM"],
+      "skipLibCheck": true,
+      "rootDir": "./src"
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
